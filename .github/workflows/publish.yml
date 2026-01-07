@@ -1,5 +1,10 @@
 name: Publish Builds
 
+on:
+  push:
+    branches:
+      - master
+
 jobs:
   release:
     runs-on: ${{ matrix.os }}
